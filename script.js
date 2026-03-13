@@ -8,17 +8,17 @@ function atualizarTempo() {
     document.getElementById("contador").innerText = `Estamos juntos há ${dias} dias!`;
 }
 
-setInterval(atualizarTempo, 1000);
-
-function toggleCarta(){
-
-function iniciarMusica(){
-
 const musica = document.getElementById("musica")
+
+document.addEventListener("click", function(){
 
 musica.play()
 
-}
+},{once:true})
+
+setInterval(atualizarTempo, 1000);
+
+function toggleCarta(){
 
 const carta = document.getElementById("carta")
 const botao = document.getElementById("botaoCarta")
@@ -53,7 +53,7 @@ setInterval(criarCoracao, 300);
 
 
 function verificarSenha() {
-    const senha = document.getElementById("senhaInput").value;
+    const senha = document.getElementById("senhaInput").value.trim().toLowerCase()
     const surpresa = document.getElementById("surpresaSenha");
 
     if (senha === "momo") {
