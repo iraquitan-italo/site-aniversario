@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz aniversário ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <audio id="musica" autoplay loop>
+        <source
+            src="musica.mp3/Ed Sheeran - Photograph ( Tradução Legendado ) Filme Como Eu Era Antes De Você - Têvalldo Lyrics (youtube).mp3"
+            type="audio/mpeg">
+
+    </audio>
+
+    <div class="container">
+
+        <h1>Feliz Aniversário Meu Amor ❤️</h1>
+
+        <p id="contador"></p>
+
+        <h2 id="digitando"></h2>
+
+        <button id="botaoCarta" onclick="toggleCarta()">Abrir carta 💌</button>
+
+        <div id="carta" class="carta">
+
+            <h2>Uma carta para você</h2>
+
+            <p>Desde que você entrou na minha vida tudo ficou mais bonito. Obrigado por cada risada, cada abraço e cada
+                momento que compartilhamos juntos. Você é uma pessoa incrível para mim, alguém que mudou completamente a
+                forma como eu vejo muitas coisas na vida.
+
+                Não consigo mais imaginar minha vida sem você. Sua presença, seu jeito, suas palavras e até as pequenas
+                coisas que só você faz tornaram meus dias mais leves e felizes. Às vezes eu paro pra pensar em como a
+                vida é engraçada… porque em meio a tantas pessoas no mundo, eu tive a sorte de encontrar você.
+
+                Com você eu aprendi que amor não está só nas grandes coisas, mas também nos pequenos momentos: nas
+                conversas simples, nas risadas sem motivo, nos olhares que dizem tudo sem precisar de palavras.
+
+                Saiba que diante de todas as dificuldades, intrigas e brigas que possam aparecer no nosso caminho, eu
+                sempre vou querer resolver tudo com você. Porque mais importante do que qualquer problema é o que nós
+                temos juntos. E hoje eu sei que você não é só alguém especial… você é um pedacinho de mim.
+
+                Quero continuar criando memórias ao seu lado, viver novas histórias, conhecer novos lugares, realizar
+                sonhos e compartilhar cada fase da vida com você. Porque quando estou ao seu lado, até os dias mais
+                comuns se tornam especiais.
+
+                Você me inspira a ser uma pessoa melhor. Me faz querer crescer, evoluir e construir um futuro bonito ao
+                seu lado. E mesmo quando as coisas não estão fáceis, saber que tenho você comigo já faz tudo parecer
+                mais leve.
+
+                Obrigado por existir, por me apoiar, por cuidar de mim e por fazer parte da minha vida. Obrigado por ser
+                essa pessoa incrível que ilumina meus dias e deixa meu coração mais tranquilo.
+
+                Que a gente continue caminhando juntos, aprendendo um com o outro, superando desafios e vivendo muitos
+                momentos felizes. Porque se tem uma coisa que eu tenho certeza, é que ao seu lado tudo vale mais a pena.
+                <br> <br>
+                Eu te amo muito ❤️
+            </p>
+
+        </div>
+
+        <h2> Nossos momentos</h2>
+
+        <p>um pouco da nossa história</p>
+
+        <div class="galeria-container">
+
+            <button class="seta esquerda" onclick="mover(-1)">❮</button>
+
+            <div class="galeria" id="galeria">
+
+                <img src="imagens/foto1.jpeg" onclick="abrirImagem(this)">
+                <img src="imagens/foto2.jpeg" onclick="abrirImagem(this)">
+                <img src="imagens/foto3.jpeg" onclick="abrirImagem(this)">
+                <img src="imagens/foto4.jpeg" onclick="abrirImagem(this)">
+                <img src="imagens/foto5.jpeg" onclick="abrirImagem(this)">
+                <img src="imagens/foto6.jpeg" onclick="abrirImagem(this)">
+                <img src="imagens/foto7.jpeg" onclick="abrirImagem(this)">
+                <img src="imagens/foto8.jpeg" onclick="abrirImagem(this)">
+            </div>
+
+            <button class="seta direita" onclick="mover(1)">❯</button>
+
+        </div>
+
+        <div id="modal" class="modal" onclick="fecharImagem()">
+                <img id="imagemGrande">
+        </div>
+
+        <br>
+
+        <h4>Clique abaixo para ver algo especial⬇️</h4>
+
+        <a href="index2.html">
+            <button>Ver nosso futuro</button>
+        </a>
+
+        <div id="futuro" class="futuro">
+            <p id="contadorFuturo"></p>
+        </div>
+
+        <br><br>
+
+        <input id="senhaInput" placeholder="Digite a senha secreta">
+        <p> <strong>Dica:</strong> apelido carinhoso</p>
+
+        <button onclick="verificarSenha()">Desbloquear surpresa</button>
+
+        <div id="surpresaSenha" class="surpresa">
+
+            <p>Você Desbloqueou minha mensagem secreta!!!
+                <br>
+                EU TE AMO INFINITAMENTE❤️❤️❤️
+                <br> <br>
+                Quando você ler isso, saiba que é só mais uma forma de dizer o quanto você é importante para mim. Você é a melhor coisa que já aconteceu na minha vida e eu sou muito grato por ter você ao meu lado. Que possamos continuar construindo nossa história juntos, cheia de amor, cumplicidade e momentos inesquecíveis. Te amo demais!
+            </p>
+
+        </div>
+
+        <div id="surpresa" class="surpresa">
+            <p>Você encontrou a surpresa escondida digitando: "momo"!
+            </p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
